@@ -1,4 +1,5 @@
 clock.h
+.gitignore
 handle.cpp
 handle.hpp
 main.cpp
