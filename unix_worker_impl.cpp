@@ -33,7 +33,6 @@ void *UnixWorkerImplementation::AcceptTasks(void *args){
 			);
 		}
 		num_tasks = context->m_task_queue.size();
-		printf("Number of tasks: %d\n", num_tasks);
 		pthread_mutex_unlock(&context->m_task_mutex);
 		if(num_tasks > 0){
 			pthread_mutex_lock(&context->m_task_mutex);
